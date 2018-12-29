@@ -1,23 +1,38 @@
 @import url('https://fonts.googleapis.com/css?family=Work+Sans');
+:root{
+	--logo: #2b2f89;
+}
 html {
 	font-family: 'Work Sans', 'Helvetica Neue', sans-serif
 }
 
 h1 {
-	color: #02537e;
+	color: var(--logo);
+}
+
+.large {
+	font-size: 50px;
+	text-transform: uppercase;
 }
 
 .column {
 	float: left;
 	width: calc(100%/3);
 	text-align: center;
-	background-color: #02537e;
+	background-color: var(--logo);
 	color: white;
 	height: 80px;
 }
 
 .column:hover {
 	background-color: #4d86a4;
+}
+
+.logo{
+	display: block;
+	text-align: center;
+	width: 25%;
+	height: 50%;
 }
 
 .row:after {
@@ -58,13 +73,18 @@ a {
 	color: #939393;
 }
 
+hr{
+	margin-left: 25%;
+	margin-right: 25%;
+}
+
 .profile {
 	float: left;
 	width: calc(100%/2);
 	text-align: left;
 }
 
-img{
+.docpic{
 	text-align: center;
 	display: block;
 	height: 100%;
@@ -94,12 +114,17 @@ img{
 }
 
 .topnav a:hover {
-	background-color: #ddd;
+	background-color: #fff;
 	color: black;
 }
 
+.left {
+	margin-right: 50%;
+	margin-left: 12.5%;
+}
+
 .active {
-	background-color: #02537e;
+	background-color: var(--logo);
 	color: white;
 }
 
@@ -109,6 +134,12 @@ img{
 
 .center {
 	text-align: center;
+	margin-right: 25%;
+	margin-left: 25%;
+}
+
+.upper {
+	text-transform: uppercase;
 }
 
 @media screen and (max-width: 600px) {
@@ -143,5 +174,25 @@ img{
 		width: 50%;
 		height: 50%;
 		margin: 0 auto;
+	}
+
+	.left {
+		margin: inherit;
+	}
+	.large {
+		font-size: 40px;
+		text-transform: uppercase;
+	}
+
+	.center{
+		margin-right: inherit;;
+		margin-left: inherit;
+	}
+}
+
+@media screen and (min-width: 600px) {
+	.logo{
+		width: 229px;
+		height: 75px;
 	}
 }
