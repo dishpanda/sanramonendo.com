@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Work+Sans');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 :root{
 	--logo: #2b2f89;
 }
 html {
-	font-family: 'Work Sans', 'Helvetica Neue', sans-serif
+	font-family: 'Montserrat', 'Helvetica Neue', sans-serif
 }
 
 h1 {
@@ -61,7 +61,7 @@ body {
 
 .topnav {
 	overflow: hidden;
-	background-color: #333;
+	background-color: #fff;
 }
 
 div.body {
@@ -106,7 +106,7 @@ hr{
 .topnav a {
 	float: left;
 	display: block;
-	color: #f2f2f2;
+	color: var(--logo);
 	text-align: center;
 	padding: 14px 16px;
 	text-decoration: none;
@@ -114,8 +114,8 @@ hr{
 }
 
 .topnav a:hover {
-	background-color: #fff;
-	color: black;
+	background-color: var(--logo);
+	color: #fff;
 }
 
 .left {
@@ -187,6 +187,9 @@ hr{
 	.center{
 		margin-right: inherit;;
 		margin-left: inherit;
+	}
+	.address{
+		text-align: center;
 	}
 }
 
