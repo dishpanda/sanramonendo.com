@@ -37,6 +37,10 @@
         text-align: left;
     }
 
+    .dropdown-content {
+        padding-left: 2em;
+    }
+
     .column {
 		width: 100%;
 	}
@@ -49,5 +53,24 @@
         margin: 0 auto;
         float: right;
         margin-left: 50vw;
+    }
+
+    .col { 
+        display: block;
+        width: 100%;
+        padding: 0;
+    }
+
+    .col-container {
+        display: table;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .yt-vid {
+        width: 100vw;
+        height: 315px;
+        margin: 0;
+        padding: 0;
     }
 }

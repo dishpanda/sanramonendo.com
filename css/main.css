@@ -37,6 +37,10 @@ article {
 	text-align: left;
 }
 
+.right {
+	float: right;
+}
+
 .large {
 	font-size:50px;
 }
@@ -62,6 +66,32 @@ article {
 	margin-top: 20px;
 	padding: 10px 0px;
 	background-color: var(--accent)
+}
+
+.column-container {
+	display: table;
+	width: 100%;
+}
+
+.colored-button {
+	float: left;
+	width: 100%;
+	text-align: center;
+	background-color: var(--logo);
+	color: white;
+	padding: 10px;
+}
+
+.div-center {
+	width: 50vw;
+	margin: 0 auto;
+}
+
+.yt-vid {
+	display: block;
+	width: 560px;
+    height: 315px;
+    margin: 0 auto;
 }
 
 /* NAV */
@@ -138,6 +168,14 @@ article {
 	display: block;
 }
 
+.not-showing {
+	display: none;
+}
+
+.showing {
+	display: block;
+}
+
 /* HERO IMAGE */
 
 .hero-image {
@@ -184,4 +222,17 @@ article {
 .row {
 	width: 80vw;
 	margin: 0 10vw;
+}
+
+/* COLUMNS FOR PATIENT EDU */
+.col-container {
+	display: table;
+	width: 50%;
+	margin: 0 auto;
+}
+
+.col {
+	width: calc(100% / 3);
+	display: table-cell;
+	padding: 10px;
 }
