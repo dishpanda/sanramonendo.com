@@ -94,11 +94,28 @@ article {
     margin: 0 auto;
 }
 
+.logo {
+	width: 30vw;
+	margin: 0 0 0 20vw;
+}
+
+.top{
+	bottom: 0;
+}
+
+.top div {
+	float: right;
+	margin-right: 20vw;
+}
 /* NAV */
 
 .topnav {
 	background-color: #fff;
 	overflow: hidden;
+	top: 0;
+	margin: 0 auto;
+	width: 60vw;
+	padding-bottom: 5vh;
 }
   
 .topnav a {
@@ -176,29 +193,6 @@ article {
 	display: block;
 }
 
-/* HERO IMAGE */
-
-.hero-image {
-	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../pictures/dentist.jpg");
-	height: calc(100vh - 140.5px);
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	position: relative;
-}
-
-.hero-text {
-	text-align: center;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	color: var(--logo);
-	text-transform: uppercase;
-
-	background-color: var(--accent);
-}
-
 /* DOWNLOADS PAGE */
 .column {
 	float: left;
@@ -236,3 +230,18 @@ article {
 	display: table-cell;
 	padding: 10px;
 }
+
+/* HEAD IMAGE */
+.hero-image {
+	/* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../pictures/dentist.jpg");
+  
+	/* Set a specific height */
+	height: 50%;
+  
+	/* Position and center the image to scale nicely on all screens */
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+  }
