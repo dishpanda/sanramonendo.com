@@ -7,8 +7,9 @@ function myFunction() {
   }
 }
 
-function toggleDrop(){
-  var x = document.getElementById("myDropdown");
+function toggleDrop(idName){
+  console.log(idName);
+  var x = document.getElementById(idName);
   if (x.className === "not-showing") {
     x.className = "dropdown-content";
     console.log("a");
