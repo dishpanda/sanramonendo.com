@@ -6,6 +6,7 @@
 	--accent: #acadae;
 	--link: #2f2f30;
 	--navfsize: 0.8em;
+	--about-width: calc(200px - 1.5em);
 }
 
 * {
@@ -123,6 +124,11 @@ article {
 	float: left;
 	margin-right: 1.5em;
 	margin-bottom: 1.5em;
+}
+
+.about {
+	width: calc (80vw - var(--about-width));
+	float: right;
 }
 /* NAV */
 
@@ -270,27 +276,46 @@ button {
 }
 
 .foot-content {
-	width: 60vw;
+	width: 100%;
 	margin: 0 auto;
 	text-align: center;
 }
 
 .sitemap {
-	text-align: left;
-	width: 50%;
+	width: 80%;
 
-	margin: 0;
+	margin: 0 auto;
 }
 
 .sitemap a {
-	display: table;
-	padding-left: 5%;
+	text-align: center;
 }
 
 .sitemap a:hover {
 	color: var(--logo);
 }
 
+.sitemap div.group {
+	float: left;
+	min-height: 13vh;
+	margin: 0 auto;
+	width: calc(100% / 4.2);	
+}
+
 .copy {
 	text-align: center;
+	float: right;
+	padding-right: 20px;
+}
+.copy a:hover {
+	color: var(--logo)
+}
+
+.map {
+	width: 80vw;
+	height: 40vh;
+	border: none;
+	top: 0;
+
+	margin: 2vh 10vw 2.5vh 10vw;
 }

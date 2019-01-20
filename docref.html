@@ -1,40 +1,42 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<!-- metas -->
 	<meta charset="utf-8">
-	<title>Meet the Team | San Ramon Endodontics</title>
+	<title>San Ramon Endodontics</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<meta name="description" content="San Ramon Endodontics Clinic in San Ramon is led by Dr Nachiket Saoji. We are specialised in Performing Root Canals">
 	<meta name="author" content="San Ramon Endodontics">
 	<meta name="theme-color" content="#2b2f89">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Scripts -->
 	<script src="https://use.fontawesome.com/6981d073ab.js"></script>
-	<script src="js/main.js"></script>
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/regular.css" integrity="sha384-avJt9MoJH2rB4PKRsJRHZv7yiFZn8LrnXuzvmZoD3fh1aL6aM6s0BBcnCvBe6XSD" crossorigin="anonymous">
+	<script src="./js/main.js"></script>
+	<!-- jQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+		$(function () {
+			$("#include-top").load("./modules/top.html");
+			$("#include-footer").load("./modules/footer.html");
+			$("#include-carousel").load("./modules/carousel.html");
+		});
+	</script>
+	<!-- Styles -->
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<link rel="stylesheet" type="text/css" href="css/mobile.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
+
 <body>
-	<div class="topnav" id="myTopnav">
-		<a href="index.html" class="home logo"><img src="pictures/logo.png" class="logo" alt="Dr. Nachiket Saoji, DDS, MS"></a>
-		<a href="about.html">Meet The Team</a>
-		<a href="contact-us.html">Contact Us</a>
-		<div class="dropdown">
-			<button class="dropbtn" onclick="toggleDrop()">Patient Information 
-				<i class="fa fa-caret-down"></i>
-			</button>
-			<div class="not-showing" id="myDropdown">
-				<a href="forms.html">Forms</a>
-				<a href="edu.html">Patient Education</a>
-			</div>
-        </div>
-        <a href="docref.html">Refer-A-Patient</a>
-		<a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
-    </div>
-	
-
-
-
-
+	<div id="include-top"></div>
+	<div id="include-carousel"></div>
+	<div class="bod">
+		<h1>Refer-A-Patient</h1>
+		<a href="downloads/patient-referral-form.pdf">
+			<i class="fa fa-download"></i>
+			Click here to Download.
+		</a>
+		<p>Doctors: Please print and fill out, then hand it over to the patient to bring to their appointment.</p>
+	</div>
+	<div id="include-footer"></div>
 </body>

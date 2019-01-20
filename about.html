@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<!-- metas -->
 	<meta charset="utf-8">
@@ -8,114 +9,38 @@
 	<meta name="description" content="San Ramon Endodontics Clinic in San Ramon is led by Dr Nachiket Saoji. We are specialised in Performing Root Canals">
 	<meta name="author" content="San Ramon Endodontics">
 	<meta name="theme-color" content="#2b2f89">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Scripts -->
 	<script src="https://use.fontawesome.com/6981d073ab.js"></script>
-	<script src="js/main.js"></script>
-	<script src="js/sticky-footer.js"></script>
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/regular.css" integrity="sha384-avJt9MoJH2rB4PKRsJRHZv7yiFZn8LrnXuzvmZoD3fh1aL6aM6s0BBcnCvBe6XSD" crossorigin="anonymous">
+	<script src="./js/main.js"></script>
+	<!-- jQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+		$(function () {
+			$("#include-top").load("./modules/top.html");
+			$("#include-footer").load("./modules/footer.html");
+			$("#include-carousel").load("./modules/carousel.html");
+		});
+	</script>
+	<!-- Styles -->
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<link rel="stylesheet" type="text/css" href="css/mobile.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<body onload="timedPlay()">
-	<div class="top">
-		<img class="logo" src="pictures/logo.png">
-		<div>
-			<h3>Dr. Nachiket Saoji, DDS, MS</h3>
-			<p>2817-100 Crow Canyon Rd<br>San Ramon, CA<br> 94583</p>
-			<a href="tel:9258295711"> Tel: (925) 829-5711</a>
-		</div>
-	</div>
 
-	<div class="topnav" id="myTopnav">
-		<a href="index.html"><i class="fa fa-home"></i> Home</a>
-		<a href="about.html">Meet The Doctor</a>
-		<div class="dropdown">
-			<button class="dropbtn" onclick="toggleDrop('patinf')">Patient Information 
-				<i class="fa fa-caret-down"></i>
-			</button>
-		<div class="not-showing" id="patinf">
-				<a href="patient-information/scheduling.html">Scheduling</a>
-				<a href="patient-information/yourvisit.html">Your Visit</a>
-				<a href="patient-information/financialpolicy.html">Financial Policy</a>
-				<a href="patient-information/insurance-info.html">Insurance Information</a>
-			</div>
-		</div> 
-		<a href="forms.html">Patient Forms</a>
-		<a href="downloads/patient-referral-form.pdf">Refer-A-Patient</a>
-		<div class="dropdown">
-			<button class="dropbtn" onclick="toggleDrop('procedures')">Procedures 
-				<i class="fa fa-caret-down"></i>
-			</button>
-			<div class="not-showing" id="procedures">
-				<a href="procedures/rootcanal.html">Root Canal Therapy</a>
-				<a href="procedures/retreatment.html">Endodontic Retreatment</a>
-				<a href="procedures/microsurgery.html">Microsurgery - Apicoectomy</a>
-				<a href="procedures/fracturedetection.html">Fracture Detection</a>
-				<a href="procedures/trauma.html">Trauma</a>
-			</div>
-		</div>
-
-		<div class="dropdown">
-				<button class="dropbtn" onclick="toggleDrop('contact')">Contact Us
-					<i class="fa fa-caret-down"></i>
-				</button>
-			<div class="not-showing" id="contact">
-				<a href="contact/contact.html">Contact Info</a>
-				<a href="contact/directions.html">Map/Directions</a>
-				<a href="contact/hours.html">Office Hours</a>
-			</div>
-		</div> 
-
-		<a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
-	</div>
-	<div class="hero-image" id="head-img"></div>
-	<div data-sticky-wrap class="bod">
+<body>
+	<div id="include-top"></div>
+	<div id="include-carousel"></div>
+	<div class="bod">
 		<h1>About Dr Saoji</h1>
-		<img class="face" width="150px" height="150px" src="pictures/dr-ns.png">
-		<p>Dr. Saoji earned his Masters degree in Biomaterials at University of Alabama, Birmingham (2009) before continuing his studies at University of California San Francisco where he received his Doctor of Dental Surgery (2011). He practiced as general dentist for a couple of years and decided to become a root canal specialist. He was accepted in the Endodontics speciality training program at the University of Pennsylvania, Philadelphia. During his speciality training Dr. Saoji received the of 2015 Grossman Award for outstanding proficiency in the Endodontic graduate program. He has been practicing Endodontics for several years and is well versed in micro endodontics including root canals and surgeries. </p>
+		<img width="200px" height="200px" src="pictures/dr-ns.jpg">
+		<p class="about">Dr. Saoji earned his Masters degree in Biomaterials at University of Alabama, Birmingham (2009)
+			before continuing his studies at University of California San Francisco where he received his Doctor of Dental
+			Surgery (2011). He practiced as general dentist for a couple of years and decided to become a root canal specialist.
+			He was accepted in the Endodontics speciality training program at the University of Pennsylvania, Philadelphia.
+			During his speciality training Dr. Saoji received the of 2015 Grossman Award for outstanding proficiency in the
+			Endodontic graduate program. He has been practicing Endodontics for several years and is well versed in micro
+			endodontics including root canals and surgeries.
+		</p>
 	</div>
-	<div data-sticky-footer class="foot">
-		<div class="foot-content">
-			<div class="sitemap">
-				<p>Dr. Nachiket Saoji, DDS, MS</p>
-				<p>
-					<b>General</b>
-					<br>
-
-					<a href="index.html">Home</a> 
-					<a href="about.html">Contact Us</a> 
-					<a href="forms.html">Patient Forms</a>
-					<a href="docref.html">Refer-A-Patient</a>
-					<br>
-					<b>Procedures</b>
-					<br>
-
-					<a href="procedures/rootcanal.html">Root Canal Therapy</a> 
-					<a href="procedures/retreatment.html">Endodontic Retreatment</a> 
-					<a href="procedures/microsurgery.html">Microsurgery&nbsp;-&nbsp;Apicoectomy</a> 
-					<a href="procedures/fracturedetection.html">Fracture Detection</a> 
-					<a href="procedures/trauma.html">Trauma</a> 
-					<br>
-					<b>Patient Information</b>
-					<br>
-
-					<a href="patient-information/scheduling.html">Scheduling</a>  
-					<a href="patient-information/yourvisit.html">Your Visit</a>  
-					<a href="patient-information/financialpolicy.html">Financial Policy</a> 
-					<a href="patient-information/insurance-info.html">Insurance Information</a> 
-					<br>
-					<b>Contact Us</b>
-					<br>
-
-					<a href="contact/contact.html">Contact Info</a>
-					<a href="contact/directions.html">Map/Directions</a>
-					<a href="contact/hours.html">Office Hours</a>
-					
-				</p>
-			</div>
-
-			<p class="copy">Website Design &copy; Rahul Deshpande for San Ramon Endodontics</p>
-		</div>
-	</div>
+	<div id="include-footer"></div>
 </body>
-<script>stickyFooter.init();</script>

@@ -132,6 +132,25 @@
     .sitemap a {
         padding-left: 0;
         text-align: center;
+        width: 100%;
+    }
+
+    .sitemap div.group {
+        float: left;
+        min-height: 13vh;
+        margin-bottom: 5vh;
+        width: 25vw;
+    
+        font-size: 0.8em
+    }
+    
+    .map {
+        width: 80vw;
+        height: 40vh;
+        border: none;
+        top: 0;
+    
+        margin: 2vh 10vw 2.5vh 10vw;
     }
 }
 
@@ -245,15 +264,21 @@
         text-align: center;
     }
 
-    .sitemap {
-        text-align: center;
-        width: 100%;
+    .sitemap div.group {
+        float: left;
+        min-height: 13vh;
+        margin-bottom: 5vh;
+        width: 25vw;
     
-        margin: 0;
+        font-size: 0.8em
     }
     
-    .sitemap a {
-        padding-left: 0;
-        text-align: center;
+    .map {
+        width: 80vw;
+        height: 40vh;
+        border: none;
+        top: 0;
+    
+        margin: 2vh 10vw 2.5vh 10vw;
     }
 }
