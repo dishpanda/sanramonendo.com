@@ -118,7 +118,21 @@
         text-align: center;
     }
 
+    .row {
+        bottom: 10px;
+    }
 
+    .sitemap {
+        text-align: center;
+        width: 100%;
+    
+        margin: 0;
+    }
+    
+    .sitemap a {
+        padding-left: 0;
+        text-align: center;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -231,4 +245,15 @@
         text-align: center;
     }
 
+    .sitemap {
+        text-align: center;
+        width: 100%;
+    
+        margin: 0;
+    }
+    
+    .sitemap a {
+        padding-left: 0;
+        text-align: center;
+    }
 }

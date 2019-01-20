@@ -1,0 +1,34 @@
+<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<!-- Flickity HTML init -->
+<div class="carousel" data-flickity='{ "imagesLoaded": true, "percentPosition": false, "autoPlay": true }'>
+    <img src="../pictures/31792925057_0290447951_k.jpg" />
+    <img src="../pictures/39769332513_35a66ce759_k.jpg" />
+    <img src="../pictures/45818680965_eac8a0c6e8_k.jpg" />
+    <img src="../pictures/46681612132_778289a205_k.jpg" />
+    <img src="../pictures/45818680965_eac8a0c6e8_k.jpg" />
+</div>
+<script>
+    $('.main-carousel').flickity({
+        // options
+        cellAlign: 'center',
+        contain: true
+    });
+</script>
+
+<style>
+    .carousel {
+        background: #EEE;
+    }
+
+    .carousel img {
+        display: block;
+        height: 200px;
+    }
+
+    @media screen and (min-width: 768px) {
+        .carousel img {
+            height: 400px;
+        }
+    }
+</style>

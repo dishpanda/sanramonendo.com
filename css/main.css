@@ -8,6 +8,10 @@
 	--navfsize: 0.8em;
 }
 
+* {
+	box-sizing: border-box;
+}
+
 body, html {
 	height: 100%;
 	margin: 0;
@@ -112,6 +116,13 @@ article {
 .bod {
 	width: 60vw;
 	margin: 0 auto;
+	min-height: 75vh;
+}
+
+.face {
+	float: left;
+	margin-right: 1.5em;
+	margin-bottom: 1.5em;
 }
 /* NAV */
 
@@ -206,7 +217,7 @@ button {
 /* DOWNLOADS PAGE */
 .column {
 	float: left;
-	width: calc(100%/3);
+	width: calc(100% / 4);
 	text-align: center;
 	background-color: var(--logo);
 	color: white;
@@ -224,8 +235,8 @@ button {
 }
 
 .row {
-	width: 80vw;
-	margin: 0 10vw;
+	width: 100%;
+	bottom: 10px;
 }
 
 /* COLUMNS FOR PATIENT EDU */
@@ -243,13 +254,8 @@ button {
 
 /* HEAD IMAGE */
 .hero-image {
-	/* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../pictures/dentist.jpg");
-
-	/* Set a specific height */
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../pictures/chair.jpg");
 	height: 50%;
-
-	/* Position and center the image to scale nicely on all screens */
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -260,7 +266,7 @@ button {
 .foot{
 	padding-top: 0.5vh;
 	background-color: #d5d6d6;
-	height: 500vh;
+	overflow-y: auto;
 }
 
 .foot-content {
@@ -272,11 +278,8 @@ button {
 .sitemap {
 	text-align: left;
 	width: 50%;
-	position: relative;
-	float: left;
 
 	margin: 0;
-	text-align: left;
 }
 
 .sitemap a {
@@ -289,6 +292,5 @@ button {
 }
 
 .copy {
-	position: absolute;
-	bottom:0;
+	text-align: center;
 }
