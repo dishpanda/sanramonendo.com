@@ -1,135 +1,37 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<!-- metas -->
 	<meta charset="utf-8">
-	<title>Fracture Detection | San Ramon Endodontics</title>
+	<title>San Ramon Endodontics</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<meta name="description" content="San Ramon Endodontics Clinic in San Ramon is led by Dr Nachiket Saoji. We are specialised in Performing Root Canals">
 	<meta name="author" content="San Ramon Endodontics">
 	<meta name="theme-color" content="#2b2f89">
-	<script src="https://use.fontawesome.com/6981d073ab.js"></script>
-	<script src="js/main.js"></script>
-	<script src="js/sticky-footer.js"></script>
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/regular.css" integrity="sha384-avJt9MoJH2rB4PKRsJRHZv7yiFZn8LrnXuzvmZoD3fh1aL6aM6s0BBcnCvBe6XSD" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="../css/main.css">
-	<link rel="stylesheet" type="text/css" href="../css/mobile.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Scripts -->
+	<script src="https://use.fontawesome.com/6981d073ab.js"></script>
+	<script src="./js/main.js"></script>
+	<!-- jQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+		$(function () {
+			$("#include-top").load("https://raw.githubusercontent.com/dishpanda/sanramonendo.com/master/modules/top.html");
+			$("#include-footer").load("https://raw.githubusercontent.com/dishpanda/sanramonendo.com/master/modules/footer.html");
+			$("#include-carousel").load("https://raw.githubusercontent.com/dishpanda/sanramonendo.com/master/modules/carousel.html");
+		});
+	</script>
+	<!-- Styles -->
+	<link rel="stylesheet" type="text/css" href="./css/main.css">
+	<link rel="stylesheet" type="text/css" href="./css/mobile.css">
 </head>
-<body onload="timedPlay()">
-	<div class="top">
-		<img class="logo" src="../pictures/logo.png">
-		<div>
-			<h3>Dr. Nachiket Saoji, DDS, MS</h3>
-			<p>2817-100 Crow Canyon Rd<br>San Ramon, CA<br> 94583</p>
-			<a href="tel:9258295711"> Tel: (925) 829-5711</a>
-		</div>
-	</div>
 
-	<div class="topnav" id="myTopnav">
-		<a href="../index.html"><i class="fa fa-home"></i> Home</a>
-		<a href="../about.html">Meet The Doctor</a>
-		<div class="dropdown">
-			<button class="dropbtn" onclick="toggleDrop('patinf')">Patient Information 
-				<i class="fa fa-caret-down"></i>
-			</button>
-		<div class="not-showing" id="patinf">
-				<a href="patient-information/scheduling.html">Scheduling</a>
-				<a href="patient-information/yourvisit.html">Your Visit</a>
-				<a href="patient-information/financialpolicy.html">Financial Policy</a>
-				<a href="patient-information/insurance-info.html">Insurance Information</a>
-			</div>
-		</div> 
-		<a href="forms.html">Patient Forms</a>
-		<a href="downloads/patient-referral-form.pdf">Refer-A-Patient</a>
-		<div class="dropdown">
-			<button class="dropbtn" onclick="toggleDrop('procedures')">Procedures 
-				<i class="fa fa-caret-down"></i>
-			</button>
-			<div class="not-showing" id="procedures">
-				<a href="procedures/rootcanal.html">Root Canal Therapy</a>
-				<a href="procedures/retreatment.html">Endodontic Retreatment</a>
-				<a href="procedures/microsurgery.html">Microsurgery - Apicoectomy</a>
-				<a href="procedures/fracturedetection.html">Fracture Detection</a>
-				<a href="procedures/trauma.html">Trauma</a>
-			</div>
-		</div>
-
-		<div class="dropdown">
-				<button class="dropbtn" onclick="toggleDrop('contact')">Contact Us
-					<i class="fa fa-caret-down"></i>
-				</button>
-			<div class="not-showing" id="contact">
-				<a href="contact/contact.html">Contact Info</a>
-				<a href="contact/directions.html">Map/Directions</a>
-				<a href="contact/hours.html">Office Hours</a>
-			</div>
-		</div> 
-
-		<a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+<body>
+	<div id="include-top"></div>
+	<div id="include-carousel"></div>
+	<div class="bod">
+		<h1>Fracture Detection</h1>
 	</div>
-	<div class="hero-image" id="head-img"></div>
-	<div data-sticky-wrap class="bod">
-	<!--
-		<h1>Fractured Teeth</h1>
-		<p>Cracked teeth demonstrate many types of symptoms, including pain when chewing, temperature sensitivities, or even the release of biting pressure. It is also common for pain to come and go, making it difficult to diagnose the cause of discomfort.</p>
-		<p>Chewing can cause movement of the cracked pieces of your tooth, and the pulp within the tooth becomes irritated. At the same time, when biting pressure is released, the crack can close quickly, resulting in sharp pain. Eventually, the pulp will become damaged and tooth will consistently hurt, even when you are not chewing. It is possible that cracks can lead to infection of the pulp tissue, which can spread to the bone and gum surrounding the problematic tooth.</p>
-	
-		<h3>Types of Cracks</h3>
-		<h4>Craze Lines</h4>
-			<p>These are tiny cracks that only affect the outer enamel of the tooth. These cracks are more common in adults. These types of cracks are superficial and are usually of no concern.</p>
-		<h4>Fractured Cusp</h4>
-			<p>When a cusp becomes weakened, a fracture may result. The cusp may break off or be removed by a dentist. A fractured cusp rarely damages the pulp, so root canal is not necessary. Your dentist will usually restore the tooth with a full crown.</p>
-		<h4>Cracked Tooth</h4>
-			<p>This type of crack extends from the chewing surface of the tooth and vertically migrates towards the root. In some cases, the crack may extend below the gum line. It is possible for the crack to extend further into the root. Damage to the pulp is commonplace. In this case, root canal treatment is usually necessary. A cracked tooth that is not treated will worsen, resulting in the loss of the tooth. Therefore, early detection is essential.</p>
-		<h4>Split Tooth</h4>
-			<p>A split tooth is usually the result of an untreated cracked tooth. It can be identified by a crack with distinct segments. This type of tooth can never be saved intact. Yet, the position and extent of the problem will dictate whether any portion of the tooth can be saved. Sometimes, endodontic retreatment by the doctors and restoration by your dentist can be used to save a portion of the tooth.</p>
-		<h4>Vertical Root Fracture</h4>
-			<p>A vertical root fracture begins at the root and extends towards the chewing surface of the tooth. Unfortunately, they show minimal symptoms and may go unnoticed. Treatment involves endodontic surgery if a portion of the tooth can be saved by removal of the fractured root. Otherwise the tooth will have to be extracted.</p>
-	-->
-	</div>
-	<div data-sticky-footer class="foot">
-			<div class="foot-content">
-				<div class="sitemap">
-					<p>Dr. Nachiket Saoji, DDS, MS</p>
-					<p>
-						<b>General</b>
-						<br>
-	
-						<a href="../index.html">Home</a> 
-						<a href="../about.html">Contact Us</a> 
-						<a href="../forms.html">Patient Forms</a>
-						<a href="../docref.html">Refer-A-Patient</a>
-						<br>
-						<b>Procedures</b>
-						<br>
-	
-						<a href="../rootcanal.html">Root Canal Therapy</a> 
-						<a href="../retreatment.html">Endodontic Retreatment</a> 
-						<a href="../microsurgery.html">Microsurgery&nbsp;-&nbsp;Apicoectomy</a> 
-						<a href="../fracturedetection.html">Fracture Detection</a> 
-						<a href="../trauma.html">Trauma</a> 
-						<br>
-						<b>Patient Information</b>
-						<br>
-	
-						<a href="../patient-information/scheduling.html">Scheduling</a>  
-						<a href="../patient-information/yourvisit.html">Your Visit</a>  
-						<a href="../patient-information/financialpolicy.html">Financial Policy</a> 
-						<a href="../patient-information/insurance-info.html">Insurance Information</a> 
-						<br>
-						<b>Contact Us</b>
-						<br>
-	
-						<a href="../contact/contact.html">Contact Info</a>
-						<a href="../contact/directions.html">Map/Directions</a>
-						<a href="../contact/hours.html">Office Hours</a>
-						
-					</p>
-				</div>
-	
-				<p class="copy">Website Design &copy; Rahul Deshpande for San Ramon Endodontics</p>
-			</div>
-		</div>
-	</body>
-	<script>stickyFooter.init();</script>
+	<div id="include-footer"></div>
+</body>

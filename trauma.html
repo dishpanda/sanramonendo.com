@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<!-- metas -->
 	<meta charset="utf-8">
@@ -8,126 +9,29 @@
 	<meta name="description" content="San Ramon Endodontics Clinic in San Ramon is led by Dr Nachiket Saoji. We are specialised in Performing Root Canals">
 	<meta name="author" content="San Ramon Endodontics">
 	<meta name="theme-color" content="#2b2f89">
-	<script src="https://use.fontawesome.com/6981d073ab.js"></script>
-	<script src="js/main.js"></script>
-	<script src="js/sticky-footer.js"></script>
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/regular.css" integrity="sha384-avJt9MoJH2rB4PKRsJRHZv7yiFZn8LrnXuzvmZoD3fh1aL6aM6s0BBcnCvBe6XSD" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="../css/main.css">
-	<link rel="stylesheet" type="text/css" href="../css/mobile.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Scripts -->
+	<script src="https://use.fontawesome.com/6981d073ab.js"></script>
+	<script src="./js/main.js"></script>
+	<!-- jQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+		$(function () {
+			$("#include-top").load("https://raw.githubusercontent.com/dishpanda/sanramonendo.com/master/modules/top.html");
+			$("#include-footer").load("https://raw.githubusercontent.com/dishpanda/sanramonendo.com/master/modules/footer.html");
+			$("#include-carousel").load("https://raw.githubusercontent.com/dishpanda/sanramonendo.com/master/modules/carousel.html");
+		});
+	</script>
+	<!-- Styles -->
+	<link rel="stylesheet" type="text/css" href="./css/main.css">
+	<link rel="stylesheet" type="text/css" href="./css/mobile.css">
 </head>
-<body onload="timedPlay()">
-	<div class="top">
-		<img class="logo" src="../pictures/logo.png">
-		<div>
-			<h3>Dr. Nachiket Saoji, DDS, MS</h3>
-			<p>2817-100 Crow Canyon Rd<br>San Ramon, CA<br> 94583</p>
-			<a href="tel:9258295711"> Tel: (925) 829-5711</a>
-		</div>
+
+<body>
+	<div id="include-top"></div>
+	<div id="include-carousel"></div>
+	<div class="bod">
+		<h1>Trauma</h1>
 	</div>
-
-	<div class="topnav" id="myTopnav">
-		<a href="../index.html"><i class="fa fa-home"></i> Home</a>
-		<a href="../about.html">Meet The Doctor</a>
-		<div class="dropdown">
-			<button class="dropbtn" onclick="toggleDrop('patinf')">Patient Information 
-				<i class="fa fa-caret-down"></i>
-			</button>
-		<div class="not-showing" id="patinf">
-				<a href="patient-information/scheduling.html">Scheduling</a>
-				<a href="patient-information/yourvisit.html">Your Visit</a>
-				<a href="patient-information/financialpolicy.html">Financial Policy</a>
-				<a href="patient-information/insurance-info.html">Insurance Information</a>
-			</div>
-		</div> 
-		<a href="forms.html">Patient Forms</a>
-		<a href="downloads/patient-referral-form.pdf">Refer-A-Patient</a>
-		<div class="dropdown">
-			<button class="dropbtn" onclick="toggleDrop('procedures')">Procedures 
-				<i class="fa fa-caret-down"></i>
-			</button>
-			<div class="not-showing" id="procedures">
-				<a href="procedures/rootcanal.html">Root Canal Therapy</a>
-				<a href="procedures/retreatment.html">Endodontic Retreatment</a>
-				<a href="procedures/microsurgery.html">Microsurgery - Apicoectomy</a>
-				<a href="procedures/fracturedetection.html">Fracture Detection</a>
-				<a href="procedures/trauma.html">Trauma</a>
-			</div>
-		</div>
-
-		<div class="dropdown">
-				<button class="dropbtn" onclick="toggleDrop('contact')">Contact Us
-					<i class="fa fa-caret-down"></i>
-				</button>
-			<div class="not-showing" id="contact">
-				<a href="contact/contact.html">Contact Info</a>
-				<a href="contact/directions.html">Map/Directions</a>
-				<a href="contact/hours.html">Office Hours</a>
-			</div>
-		</div> 
-
-		<a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
-	</div>
-	<div class="hero-image" id="head-img"></div>
-	<div data-sticky-wrap class="bod">
-		<h3>Dislodged Teeth</h3>
-		<p>Injuries to the mouth can cause teeth to be pushed back into their sockets. Your endodontist or general dentist may reposition and stabilize your tooth. Root canal treatment is usually started within a few weeks of the injury and a medication, such as calcium hydroxide, may be placed inside of the tooth. Eventually, a permanent root canal filling will be placed.</p>
-		<p>Sometimes a tooth may be pushed partially out of the socket. Again, your endodontist or general dentist may reposition and stabilize your tooth. If the pulp remains healthy, then no other treatment is necessary. Yet, if the pulp becomes damaged or infected, root canal treatment will be required.</p>
-		<br>
-		<h3>Avulsed Teeth</h3>
-		<p>If an injury causes a tooth to be completely knocked out of your mouth, it is important that you are treated immediately! If this happens to you, keep the tooth moist. If possible, put it back into the socket. A tooth is more likely to be saved if it remains moist. You can even put the tooth in milk or a glass of water (add a pinch of salt.) Your Endodontist may start root canal treatment based upon the stage of root development. The length of time the tooth was out of your mouth and the way the tooth was stored, may influence the type of treatment you receive.</p>
-		<br>
-		<h3>Injuries in Children</h3>
-		<p>An injured immature tooth may need one of the following procedures to improve the chances of saving the tooth:</p>
-		<br>
-		<h3>Apexogenesis</h3>
-		<p>This procedure encourages the root to continue development by attempting to keep the pulp tissue vital and healthy. With apexogenesis, the pulp tissue is covered with medication to encourage growth. The tip of the root (apex) will continue to close as the child gets older. In turn, the walls of the root canal will thicken. If the pulp heals, no additional treatment will be necessary. The more mature the root becomes, the better the chance to save the tooth.</p>
-		<br>
-		<h3>Apexification</h3>
-		<p>In this case, Dr. Saoji will determine if an unhealthy and often non-vital pulp needs to be removed.  The doctors may discuss the treatment options of either placing a medication into the root to help a hard tissue form near the root tip, or a material may be placed at the end of the root to allow for an immediate seal of the root canal system. Unfortunately, the root canal walls will not continue to develop, but the goal is to be able to maintain the tooth as long as possible without disease or symptoms. </p>
-	</div>
-	<div data-sticky-footer class="foot">
-		<div class="foot-content">
-			<div class="sitemap">
-				<p>Dr. Nachiket Saoji, DDS, MS</p>
-				<p>
-					<b>General</b>
-					<br>
-
-					<a href="index.html">Home</a> 
-					<a href="about.html">Contact Us</a> 
-					<a href="forms.html">Patient Forms</a>
-					<a href="docref.html">Refer-A-Patient</a>
-					<br>
-					<b>Procedures</b>
-					<br>
-
-					<a href="rootcanal.html">Root Canal Therapy</a> 
-					<a href="retreatment.html">Endodontic Retreatment</a> 
-					<a href="microsurgery.html">Microsurgery&nbsp;-&nbsp;Apicoectomy</a> 
-					<a href="fracturedetection.html">Fracture Detection</a> 
-					<a href="trauma.html">Trauma</a> 
-					<br>
-					<b>Patient Information</b>
-					<br>
-
-					<a href="patient-information/scheduling.html">Scheduling</a>  
-					<a href="patient-information/yourvisit.html">Your Visit</a>  
-					<a href="patient-information/financialpolicy.html">Financial Policy</a> 
-					<a href="patient-information/insurance-info.html">Insurance Information</a> 
-					<br>
-					<b>Contact Us</b>
-					<br>
-
-					<a href="contact/contact.html">Contact Info</a>
-					<a href="contact/directions.html">Map/Directions</a>
-					<a href="contact/hours.html">Office Hours</a>
-					
-				</p>
-			</div>
-
-			<p class="copy">Website Design &copy; Rahul Deshpande for San Ramon Endodontics</p>
-		</div>
-	</div>
+	<div id="include-footer"></div>
 </body>
-<script>stickyFooter.init();</script>

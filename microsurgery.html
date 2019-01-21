@@ -1,127 +1,53 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<!-- metas -->
 	<meta charset="utf-8">
-	<title>Fracture Detection | San Ramon Endodontics</title>
+	<title>San Ramon Endodontics</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<meta name="description" content="San Ramon Endodontics Clinic in San Ramon is led by Dr Nachiket Saoji. We are specialised in Performing Root Canals">
 	<meta name="author" content="San Ramon Endodontics">
 	<meta name="theme-color" content="#2b2f89">
-	<script src="https://use.fontawesome.com/6981d073ab.js"></script>
-	<script src="js/main.js"></script>
-	<script src="js/sticky-footer.js"></script>
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/regular.css" integrity="sha384-avJt9MoJH2rB4PKRsJRHZv7yiFZn8LrnXuzvmZoD3fh1aL6aM6s0BBcnCvBe6XSD" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="../css/main.css">
-	<link rel="stylesheet" type="text/css" href="../css/mobile.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Scripts -->
+	<script src="https://use.fontawesome.com/6981d073ab.js"></script>
+	<script src="./js/main.js"></script>
+	<!-- jQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+		$(function () {
+			$("#include-top").load("https://raw.githubusercontent.com/dishpanda/sanramonendo.com/master/modules/top.html");
+			$("#include-footer").load("https://raw.githubusercontent.com/dishpanda/sanramonendo.com/master/modules/footer.html");
+			$("#include-carousel").load("https://raw.githubusercontent.com/dishpanda/sanramonendo.com/master/modules/carousel.html");
+		});
+	</script>
+	<!-- Styles -->
+	<link rel="stylesheet" type="text/css" href="./css/main.css">
+	<link rel="stylesheet" type="text/css" href="./css/mobile.css">
 </head>
-<body onload="timedPlay()">
-	<div class="top">
-		<img class="logo" src="../pictures/logo.png">
-		<div>
-			<h3>Dr. Nachiket Saoji, DDS, MS</h3>
-			<p>2817-100 Crow Canyon Rd<br>San Ramon, CA<br> 94583</p>
-			<a href="tel:9258295711"> Tel: (925) 829-5711</a>
-		</div>
-	</div>
 
-	<div class="topnav" id="myTopnav">
-		<a href="../index.html"><i class="fa fa-home"></i> Home</a>
-		<a href="../about.html">Meet The Doctor</a>
-		<div class="dropdown">
-			<button class="dropbtn" onclick="toggleDrop('patinf')">Patient Information 
-				<i class="fa fa-caret-down"></i>
-			</button>
-		<div class="not-showing" id="patinf">
-				<a href="patient-information/scheduling.html">Scheduling</a>
-				<a href="patient-information/yourvisit.html">Your Visit</a>
-				<a href="patient-information/financialpolicy.html">Financial Policy</a>
-				<a href="patient-information/insurance-info.html">Insurance Information</a>
-			</div>
-		</div> 
-		<a href="forms.html">Patient Forms</a>
-		<a href="downloads/patient-referral-form.pdf">Refer-A-Patient</a>
-		<div class="dropdown">
-			<button class="dropbtn" onclick="toggleDrop('procedures')">Procedures 
-				<i class="fa fa-caret-down"></i>
-			</button>
-			<div class="not-showing" id="procedures">
-				<a href="procedures/rootcanal.html">Root Canal Therapy</a>
-				<a href="procedures/retreatment.html">Endodontic Retreatment</a>
-				<a href="procedures/microsurgery.html">Microsurgery - Apicoectomy</a>
-				<a href="procedures/fracturedetection.html">Fracture Detection</a>
-				<a href="procedures/trauma.html">Trauma</a>
-			</div>
-		</div>
-
-		<div class="dropdown">
-				<button class="dropbtn" onclick="toggleDrop('contact')">Contact Us
-					<i class="fa fa-caret-down"></i>
-				</button>
-			<div class="not-showing" id="contact">
-				<a href="contact/contact.html">Contact Info</a>
-				<a href="contact/directions.html">Map/Directions</a>
-				<a href="contact/hours.html">Office Hours</a>
-			</div>
-		</div> 
-
-		<a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
-	</div>
-	<div class="hero-image" id="head-img"></div>
-	<div data-sticky-wrap class="bod">
+<body>
+	<div id="include-top"></div>
+	<div id="include-carousel"></div>
+	<div class="bod">
 		<h1>Microsurgery (Apicoectomy)</h1>
 		<h3>Why might I need Endodontic Surgery?</h3>
-		<p>Generally, a root canal is all that is needed to save teeth with injured pulps from extraction. Occasionally, this non-surgical procedure will not be sufficient to heal the tooth and your endodontist will recommend surgery. Endodontic surgery can be used to locate fractures or hidden canals that do not appear on x-rays but still manifest pain in the tooth. Damaged root surfaces or the surrounding bone may also be treated with this procedure. The most common surgery used to save damaged teeth is an apicoectomy or root-end resection.</p>
+		<p>Generally, a root canal is all that is needed to save teeth with injured pulps from extraction. Occasionally, this
+			non-surgical procedure will not be sufficient to heal the tooth and your endodontist will recommend surgery.
+			Endodontic surgery can be used to locate fractures or hidden canals that do not appear on x-rays but still manifest
+			pain in the tooth. Damaged root surfaces or the surrounding bone may also be treated with this procedure. The most
+			common surgery used to save damaged teeth is an apicoectomy or root-end resection.</p>
 		<h3>What is an Apicoectomy?</h3>
-		<p>The video below illustrates this simple procedure. An incision is made in the gum tissue to expose the bone and surrounding inflamed tissue. The damaged tissue is removed along with the end of the root tip. A root-end filling is placed to prevent reinfection of the root and the gum is sutured. The bone naturally heals around the root over a period of months restoring full function.</p>
-		<p>Following the procedure, there may be some discomfort or slight swelling while the incision heals. This is normal for any surgical procedure. To alleviate any discomfort, an appropriate pain medication will be recommended. If you have pain that does not respond to medication, please call our office.</p>
-		
-		<iframe style="width: 100%;height: 50vh" src="https://fast.wistia.net/embed/iframe/uz5nn3rn48"></iframe>
-	
+		<p>The video below illustrates this simple procedure. An incision is made in the gum tissue to expose the bone and
+			surrounding inflamed tissue. The damaged tissue is removed along with the end of the root tip. A root-end filling is
+			placed to prevent reinfection of the root and the gum is sutured. The bone naturally heals around the root over a
+			period of months restoring full function.</p>
+		<p>Following the procedure, there may be some discomfort or slight swelling while the incision heals. This is normal
+			for any surgical procedure. To alleviate any discomfort, an appropriate pain medication will be recommended. If you
+			have pain that does not respond to medication, please call our office.</p>
+
+		<iframe style="width: 100%;height: 50vh; border: none" src="https://fast.wistia.net/embed/iframe/uz5nn3rn48"></iframe>
 	</div>
-	<div data-sticky-footer class="foot">
-			<div class="foot-content">
-				<div class="sitemap">
-					<p>Dr. Nachiket Saoji, DDS, MS</p>
-					<p>
-						<b>General</b>
-						<br>
-	
-						<a href="index.html">Home</a> 
-						<a href="about.html">Contact Us</a> 
-						<a href="forms.html">Patient Forms</a>
-						<a href="docref.html">Refer-A-Patient</a>
-						<br>
-						<b>Procedures</b>
-						<br>
-	
-						<a href="rootcanal.html">Root Canal Therapy</a> 
-						<a href="retreatment.html">Endodontic Retreatment</a> 
-						<a href="microsurgery.html">Microsurgery&nbsp;-&nbsp;Apicoectomy</a> 
-						<a href="fracturedetection.html">Fracture Detection</a> 
-						<a href="trauma.html">Trauma</a> 
-						<br>
-						<b>Patient Information</b>
-						<br>
-	
-						<a href="patient-information/scheduling.html">Scheduling</a>  
-						<a href="patient-information/yourvisit.html">Your Visit</a>  
-						<a href="patient-information/financialpolicy.html">Financial Policy</a> 
-						<a href="patient-information/insurance-info.html">Insurance Information</a> 
-						<br>
-						<b>Contact Us</b>
-						<br>
-	
-						<a href="contact/contact.html">Contact Info</a>
-						<a href="contact/directions.html">Map/Directions</a>
-						<a href="contact/hours.html">Office Hours</a>
-						
-					</p>
-				</div>
-	
-				<p class="copy">Website Design &copy; Rahul Deshpande for San Ramon Endodontics</p>
-			</div>
-		</div>
-	</body>
-	<script>stickyFooter.init();</script>
+	<div id="include-footer"></div>
+</body>

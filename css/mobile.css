@@ -139,7 +139,7 @@
         float: left;
         min-height: 13vh;
         margin-bottom: 5vh;
-        width: 25vw;
+        width: calc (100% / 4);
     
         font-size: 0.8em
     }
@@ -268,7 +268,7 @@
         float: left;
         min-height: 13vh;
         margin-bottom: 5vh;
-        width: 25vw;
+        width: calc (100% / 4);
     
         font-size: 0.8em
     }
