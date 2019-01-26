@@ -152,6 +152,11 @@
     
         margin: 2vh 10vw 2.5vh 10vw;
     }
+
+    .about {
+        width: inherit;
+        float: none;
+    }
 }
 
 @media screen and (max-width: 600px) {
