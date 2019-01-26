@@ -5,7 +5,7 @@
 	--logo: #2b2f89;
 	--accent: #acadae;
 	--link: #2f2f30;
-	--navfsize: 0.8em;
+	--navfsize: 1em;
 	--about-width: calc(200px - 1.5em);
 }
 
@@ -49,6 +49,10 @@ article {
 
 .large {
 	font-size:50px;
+}
+
+.medium {
+	font-size: 30px;
 }
 
 .address {
@@ -101,8 +105,9 @@ article {
 }
 
 .logo {
-	width: 30vw;
-	margin: 0 0 0 20vw;
+	width: 25vw;
+	/* max-width: 28vw; */
+	margin: 1em 0 0 20vw;
 }
 
 .top{
@@ -111,13 +116,28 @@ article {
 
 .top div {
 	float: right;
-	margin-right: 20vw;
+	width: 30vw;
+	margin-right: 5vw;
+}
+
+top div p {
+	text-align: center;
+}
+
+.address {
+	float: left;
+	width: 50%;
+}
+
+.telfax {
+	float: right;
+	width: 50%;
 }
 
 .bod {
 	width: 60vw;
 	margin: 0 auto;
-	min-height: 75vh;
+	min-height: 50vh;
 }
 
 .face {
@@ -127,8 +147,13 @@ article {
 }
 
 .about {
-	width: calc (80vw - var(--about-width));
+	width: calc(100% - 220px);
+	text-align: justify;
 	float: right;
+}
+
+.name {
+	margin-bottom: 0.5em;
 }
 /* NAV */
 
@@ -149,7 +174,6 @@ article {
 	text-align: center;
 	padding: 7px 8px 7px 8px;
 	text-decoration: none;
-	font-size: var(--navfsize);
 }
   
 .home {
@@ -162,7 +186,7 @@ article {
 }
  
 button {
-	font-size: var(--navfsize);
+	font-size: 1em;
 }
 
 .dropdown {
@@ -220,19 +244,6 @@ button {
 	display: block;
 }
 
-/* DOWNLOADS PAGE */
-.column {
-	float: left;
-	width: calc(100% / 4);
-	text-align: center;
-	background-color: var(--logo);
-	color: white;
-	height: 80px;
-}
-
-.column:hover {
-	background-color: #4d86a4;
-}
 
 .row:after {
 	content: "";
