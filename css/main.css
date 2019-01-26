@@ -147,7 +147,7 @@ top div p {
 }
 
 .about {
-	width: calc(100% - 220px);
+	width: calc(100% - 175px);
 	text-align: justify;
 	float: right;
 }
