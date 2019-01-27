@@ -1,5 +1,5 @@
 :root {
-    --navfsize: 0.8em;
+    --navfsize: 1em;
     --logo: #2b2f89;
 
 }
@@ -104,7 +104,7 @@
     }
 
     .top div{
-        font-size: 1em;
+        font-size: var(--navfsize);
         text-align: center;
         
         width: 100vw;
@@ -251,7 +251,7 @@
     }
 
     .top div{
-        font-size: 1em;
+        font-size: var(--navfsize);
         text-align: center;
         
         width: 100vw;
