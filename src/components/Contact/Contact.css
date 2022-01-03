@@ -1,0 +1,24 @@
+.flex-container {
+    display: flex;
+    flex-flow: row;
+    width: 100%;
+    align-content: space-between;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-map {
+    width: 30vw;
+    height: 352px;
+    border: none;
+}
+
+#contact-left, #contact-right {
+    width: 100%;
+}
+
+@media only screen and (max-width: 992px) {
+    .contact-map {
+        width: 100%
+    }
+}

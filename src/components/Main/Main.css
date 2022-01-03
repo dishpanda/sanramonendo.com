@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+
+:root {
+  --logo: #2b2f89;
+  --accent: #acadae;
+  --link: #2f2f30;
+}
+
+body,
+html {
+  font-family: "Montserrat", "Helvetica Neue", sans-serif;
+}
+
+.full {
+  background-color: #fff;
+}
+
+.navbar a {
+  color: var(--logo) !important;
+  font-family: "Montserrat", "Helvetica Neue", sans-serif;
+}
+
+.navbar-brand {
+  font-size: 1rem!important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--logo) !important;
+  font-family: "Montserrat", "Helvetica Neue", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: var(--link);
+}
+
+p {
+  font-family: "Montserrat", "Helvetica Neue", sans-serif;
+}
+
+.content {
+  min-height: 50vh;
+}
+
+@media only screen and (max-width: 992px) {
+  .navbar-brand {
+    font-size: 1.25rem!important;
+  }
+}

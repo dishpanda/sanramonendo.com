@@ -1,0 +1,44 @@
+.footer {
+  bottom: 0;
+  font-family: "Montserrat", "Helvetica Neue", sans-serif;
+}
+
+.flex-container-6040 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: top;
+}
+
+.flex-div-60 {
+  width: 60%;
+  padding: 0 2%;
+}
+
+.flex-div-40 {
+  width: 40%;
+  padding: 0 2%;
+}
+
+.map {
+  display: block;
+  border: none;
+  top: 0;
+  width: 25vw;
+  height: 20vh;
+}
+
+@media only screen and (max-width: 992px) {
+  .flex-container-6040 {
+    display: block;
+  }
+  .map {
+    width: 100%;
+  }
+  .flex-div-60,
+  .flex-div-40 {
+    width: 100%;
+    padding: 0 2%;
+  }
+}
